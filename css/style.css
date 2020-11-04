@@ -1,0 +1,121 @@
+body {
+  background: #fff;
+  font-family: verdana, arial, sans-serif;
+  font-family: 'verdana';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form_send {
+  width: 293px;
+  height: 230px;
+  background: linear-gradient(to right, #dbf1fa, #e7f6fc);
+  padding: 22px 30px;
+  box-shadow: 0.1px 3px 3px #888888, -0.1px -0.1px 3px #888888;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/border.png) 0 0 no-repeat;
+  padding-left: 38px;
+}
+
+.form_wrapper_title {
+  font-size: 20px;
+  font-style: italic;
+  color: #787878;
+  padding: 33px 0 14px;
+  position: relative;
+}
+
+.form_wrapper_title::before {
+  content: "";
+  width: 26px;
+  height: 17px;
+  right: 204px;
+  background: url(../img/ic-key.png) 50% 6px no-repeat;
+  position: absolute;
+}
+
+.form_wrapper_title a {
+  font-size: 16px;
+  font-style: normal;
+  color: #1b6fb6;
+  text-decoration: underline;
+}
+
+.form_wrapper label {
+  font-size: 14px;
+  color: #787878;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_wrapper :nth-child(3) {
+  margin-top: 10px;
+}
+
+.form_wrapper_login, .form_wrapper_password {
+  width: 135px;
+  height: 20px;
+  background: linear-gradient(#f6f7f8 #ebecf0);
+  border: none;
+  box-shadow: inset 1px 1px 1px #d0d6dc, inset -1px -1px 1px #f2f2f5;
+  border-radius: 3px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_checkbox {
+  display: none;
+}
+
+.checkbox label::before {
+  content: "";
+  width: 17px;
+  height: 16px;
+  margin-right: 2px;
+  background: url(../img/check.png) 0 0 no-repeat;
+}
+
+.checkbox input:checked+label::before {
+  background-position: 0 -32px;
+}
+
+.form_wrapper_send {
+  width: 72px;
+  height: 25px;
+  margin-left: 31px;
+  color: #fff;
+  border: 1px solid #4c726f;
+  border-radius: 3px;
+  background: #2da683;
+  box-shadow: inset 1px 1px 1px #56ba9d, inset -1px -1px 1px #56ba9d;
+}
+
+.form_wrapper_remember-password {
+  font-size: 12px;
+  color: #1b6fb6;
+  text-align: right;
+  padding: 14px 0 28px;
+  text-decoration: underline;
+}
