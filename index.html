@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +10,66 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/script.js"></script>
 </head>
+
 <body>
   <div class="container">
     <form action="#">
-      <div class="form_send">
-        <div class="form_wrapper">
-          <h3 class="form_wrapper_title">Вход / <a href="#">Регистрация</a> </h3>
+      <div class="first_form_send">
+        <div class="first_form_wrapper">
+          <h3 class="first_form_wrapper_title">Вход / <a href="#">Регистрация</a> </h3>
           <label for="login">Логин
-            <input type="text" class="form_wrapper_login" id="login">
-          </label>         
+            <input type="text" class="first_form_wrapper_login" id="login">
+          </label>
           <label for="password">Пароль
-            <input type="password" class="form_wrapper_password">
-          </label>      
-          <div class="checkbox">
-            <input type="checkbox" name="" id="remember" class="input_checkbox">
+            <input type="password" class="first_form_wrapper_password">
+          </label>
+          <div class="first_checkbox">
+            <input type="checkbox" name="" id="remember" class="first_input_checkbox">
             <label for="remember">Запомнить</label>
-            <input type="submit" value="Войти" class="form_wrapper_send">
-          </div>   
-          
-          <a href="#" class="form_wrapper_remember-password">Напомнить пароль</a>
+            <input type="submit" value="Войти" class="first_form_wrapper_send">
+          </div>
+          <a href="#" class="first_form_wrapper_remember-password">Напомнить пароль</a>
         </div>
       </div>
-     
     </form>
+
+    <form action="#">
+      <div class="second_form_send">
+        <div class="second_wrapper">
+          <h4 class="second_wrapper_title">Опрос</h4>
+          <p class="second_wrapper_text">Каким способом вы чаще всего оплачиваете электроэнергию?</p>
+          <div class="second_checkbox">
+            <div class="second_checkbox_radio">
+              <input type="radio" name="choice" id="bank">
+              <label for="bank">В отделении банка</label>
+            </div>
+            <div class="second_checkbox_radio">
+              <input type="radio" name="choice" id="card">
+              <label for="card"> Банковской картой</label>
+            </div>
+            <div class="second_checkbox_radio">
+              <input type="radio" name="choice" id="qiwi">
+              <label for="qiwi">Через терминал Qiwi</label>
+            </div>
+            <div class="second_checkbox_radio">
+              <input type="radio" name="choice" id="phone">
+              <label for="phone">С помощью мобильного телефона</label>
+            </div>
+            <div class="second_checkbox_radio">
+              <input type="radio" name="choice" id="auto">
+              <label for="auto">Автоматическим платежом</label>
+            </div>
+          </div>
+          <div class="second_buttons">
+            <input type="button" value="Ответить" class="second_buttons_button">
+            <a href="#" class="second_buttons_link">Все опросы</a>
+          </div>
+        </div>
+      </div>
+    </form>
+
   </div>
+
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #bfbfbf;
   font-family: verdana, arial, sans-serif;
   font-family: 'verdana';
 }
@@ -12,14 +12,15 @@ body {
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
   margin-top: 50px;
 }
 
-.form_send {
+.first_form_send {
   width: 293px;
   height: 230px;
   background: linear-gradient(to right, #dbf1fa, #e7f6fc);
@@ -27,14 +28,14 @@ form {
   box-shadow: 0.1px 3px 3px #888888, -0.1px -0.1px 3px #888888;
 }
 
-.form_wrapper {
+.first_form_wrapper {
   display: flex;
   flex-direction: column;
   background: url(../img/border.png) 0 0 no-repeat;
   padding-left: 38px;
 }
 
-.form_wrapper_title {
+.first_form_wrapper_title {
   font-size: 20px;
   font-style: italic;
   color: #787878;
@@ -42,7 +43,7 @@ form {
   position: relative;
 }
 
-.form_wrapper_title::before {
+.first_form_wrapper_title::before {
   content: "";
   width: 26px;
   height: 17px;
@@ -51,14 +52,14 @@ form {
   position: absolute;
 }
 
-.form_wrapper_title a {
+.first_form_wrapper_title a {
   font-size: 16px;
   font-style: normal;
   color: #1b6fb6;
   text-decoration: underline;
 }
 
-.form_wrapper label {
+.first_form_wrapper label {
   font-size: 14px;
   color: #787878;
   display: flex;
@@ -66,11 +67,11 @@ form {
   align-items: center;
 }
 
-.form_wrapper :nth-child(3) {
+.first_form_wrapper :nth-child(3) {
   margin-top: 10px;
 }
 
-.form_wrapper_login, .form_wrapper_password {
+.first_form_wrapper_login, .first_form_wrapper_password {
   width: 135px;
   height: 20px;
   background: linear-gradient(#f6f7f8 #ebecf0);
@@ -79,17 +80,17 @@ form {
   border-radius: 3px;
 }
 
-.checkbox {
+.first_checkbox {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.input_checkbox {
+.first_input_checkbox {
   display: none;
 }
 
-.checkbox label::before {
+.first_checkbox label::before {
   content: "";
   width: 17px;
   height: 16px;
@@ -97,11 +98,11 @@ form {
   background: url(../img/check.png) 0 0 no-repeat;
 }
 
-.checkbox input:checked+label::before {
+.first_checkbox input:checked+label::before {
   background-position: 0 -32px;
 }
 
-.form_wrapper_send {
+.first_form_wrapper_send {
   width: 72px;
   height: 25px;
   margin-left: 31px;
@@ -112,10 +113,74 @@ form {
   box-shadow: inset 1px 1px 1px #56ba9d, inset -1px -1px 1px #56ba9d;
 }
 
-.form_wrapper_remember-password {
+.first_form_wrapper_remember-password {
   font-size: 12px;
   color: #1b6fb6;
   text-align: right;
   padding: 14px 0 28px;
   text-decoration: underline;
+}
+
+.second_form_send {
+  width: 334px;
+  height: 300px;
+  background: #fff;
+  padding: 9px 16px 13px 14px;
+}
+
+.second_wrapper {
+  border: 2px dashed #fbdb98;
+  padding-left: 35px;
+}
+
+.second_wrapper_title {
+  color: #5a5a5a;
+  font-size: 18px;
+  padding: 27px 0 10px;
+  font-weight: 700;
+}
+
+.second_wrapper_text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #0d0d0d;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+
+.second_checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+}
+
+.second_checkbox label {
+  font-size: 12px;
+  color: #525252;
+}
+
+.second_checkbox_radio {
+  margin-bottom: 5px;
+}
+
+.second_buttons {
+  padding: 13px 0 25px;
+}
+
+.second_buttons_button {
+  width: 80px;
+  height: 32px;
+  font-size: 12px;
+  color: #535353;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #fcfcfc, #eeeeee);
+}
+
+.second_buttons_link {
+  font-size: 12px;
+  color: #535353;
+  text-decoration: underline;
+  margin-left: 50px;
 }
