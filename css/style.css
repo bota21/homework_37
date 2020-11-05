@@ -20,7 +20,7 @@ form {
   margin-top: 50px;
 }
 
-.first_form_send {
+.first_form {
   width: 293px;
   height: 230px;
   background: linear-gradient(to right, #dbf1fa, #e7f6fc);
@@ -121,11 +121,12 @@ form {
   text-decoration: underline;
 }
 
-.second_form_send {
+.second_form {
   width: 334px;
   height: 284px;
   background: #fff;
   padding: 9px 16px 13px 14px;
+  box-shadow: 0.1px 3px 3px #888888, -0.1px -0.1px 3px #888888;
 }
 
 .second_wrapper {
@@ -168,17 +169,20 @@ form {
 .second_checkbox_radio input[type="radio"] {
   display: none;
 }
-.second_checkbox_radio label{
+
+.second_checkbox_radio label {
   cursor: pointer;
 }
+
 .second_checkbox_radio label::before {
   content: "";
   width: 12px;
   height: 12px;
   background: url(../img/radio.png) -1px 100% no-repeat;
   position: absolute;
-left: -15px;
+  left: -15px;
 }
+
 .second_checkbox_radio input:checked+label::before {
   background-position: -1px 4%;
 }
@@ -203,4 +207,89 @@ left: -15px;
   color: #535353;
   text-decoration: underline;
   margin-left: 50px;
+}
+
+.third_form {
+  width: 382px;
+  height: 384px;
+  background: #fff;
+  box-shadow: 0.1px 3px 3px #8b8b8b, -0.1px -0.1px 3px #8b8b8b;
+  display: flex;
+  flex-direction: column;
+  padding: 0 29px 0 33px;
+}
+
+.third_form select {
+  width: 319px;
+  height: 55px;
+  background: #c1cfd9;
+  margin: 49px 0 20px;
+  appearance: none;
+  color: #fff;
+  font-size: 24px;
+  padding-left: 21px;
+  border: none;
+}
+
+.third_form_title {
+  width: 280px;
+  height: 34px;
+  font-size: 18px;
+  color: #dae4eb;
+  padding-left: 9px;
+  border: 1px solid #dae4eb;
+  box-shadow: inset 1px 1px 3px #f6f8fa;
+  margin: 0 0 14px 20px;
+}
+
+.third_form_title::placeholder {
+  color: #dae4eb;
+}
+
+.third_wrapper {
+  margin: 5px 0 20px 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.third_wrapper input {
+  display: none;
+}
+
+.third_wrapper label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/form-3_check.png) 0 0 no-repeat;
+  position: absolute;
+  left: -40px;
+  bottom: -8px;
+}
+
+.third_wrapper input:checked+label::before {
+  background-position: 0 -40px;
+}
+
+.third_form_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third_form_buttons {
+  padding: 11px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.third_form_buttons.save {
+  background: #a8bd44;
+}
+
+.third_form_buttons.delete {
+  background: #f97e76;
+  padding: 11px 11px;
 }

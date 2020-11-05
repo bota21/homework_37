@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <form action="#">
-      <div class="first_form_send">
+      <div class="first_form">
         <div class="first_form_wrapper">
           <h3 class="first_form_wrapper_title">Вход / <a href="#">Регистрация</a> </h3>
           <label for="login">Логин
@@ -32,7 +32,7 @@
     </form>
 
     <form action="#">
-      <div class="second_form_send">
+      <div class="second_form">
         <div class="second_wrapper">
           <h4 class="second_wrapper_title">Опрос</h4>
           <p class="second_wrapper_text">Каким способом вы чаще всего оплачиваете электроэнергию?</p>
@@ -43,7 +43,7 @@
             </div>
             <div class="second_checkbox_radio">
               <input type="radio" name="choice" id="card">
-              <label for="card"> Банковской картой</label>
+              <label for="card">Банковской картой</label>
             </div>
             <div class="second_checkbox_radio">
               <input type="radio" name="choice" id="qiwi">
@@ -62,6 +62,30 @@
             <input type="button" value="Ответить" class="second_buttons_button">
             <a href="#" class="second_buttons_link">Все опросы</a>
           </div>
+        </div>
+      </div>
+    </form>
+    <form action="#">
+      <div class="third_form">
+        <select disabled="disabled">
+          <option value="Categories">Categories</option>
+        </select>
+        <input type="text" class="third_form_title" placeholder="Title">
+        <div class="third_wrapper">
+          <input type="checkbox" name="dropdown" id="dropdown">
+          <label for="dropdown">Display as dropdown</label>
+        </div>
+        <div class="third_wrapper">
+          <input type="checkbox" name="counts" id="counts">
+          <label for="counts">Show post counts</label>
+        </div>
+        <div class="third_wrapper">
+          <input type="checkbox" name="Show hierarchy" id="Show hierarchy">
+          <label for="Show hierarchy">Display as dropdown</label>
+        </div>
+        <div class="third_form_buttons">
+          <input type="submit" class="third_form_buttons save" value="Save">
+          <input type="reset" class="third_form_buttons delete" value="Delete">
         </div>
       </div>
     </form>
